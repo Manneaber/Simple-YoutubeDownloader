@@ -1,0 +1,16 @@
+.container-fluid {
+    margin-top: 15px;
+}
+
+.details-row {
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.progress {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

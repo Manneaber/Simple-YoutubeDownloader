@@ -1,0 +1,27 @@
+{
+  "name": "youtube-downloader",
+  "version": "1.0.0",
+  "description": "A minimal Electron application written with Typescript",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js",
+    "compile": "npm run build && electron-packager ./dist youtube-downloader --asar --overwrite --platform=win32 --arch=ia32 --out=release-builds"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.5",
+    "@types/fluent-ffmpeg": "^2.1.6",
+    "@types/request": "^2.47.1",
+    "electron": "^2.0.2",
+    "electron-packager": "^12.1.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "request": "^2.87.0",
+    "ytdl-core": "^0.20.4"
+  }
+}
